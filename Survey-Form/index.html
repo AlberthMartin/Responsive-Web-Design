@@ -1,0 +1,57 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <title>freeCodeCamp Survey Form</title>
+      </head>
+      <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <fieldset>
+        <label id="name-label" for="name">Name <input required id="name" type="text" placeholder="Enter your name"></label>
+        
+        <label id="email-label" for="email">Email <input required id="email" type="email" placeholder="Enter your Email"></label>
+  
+        <label id="number-label" for="age">Age <input required id="number" type="number" min="12" max="40" placeholder="Age"></label>
+  
+  </fieldset>
+  
+  <fieldset>
+      <label for="dropdown"> Which option best describes your current role? 
+      <select id="dropdown">
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+      </select>
+      </label>
+  </fieldset>
+  
+  <fieldset>
+      <p> Would you recommend freeCodeCamp to a friend?</p>
+      <label> Yes<input name="recommend" type="radio" checked value="yes" class="inline"></label>
+      <label> No<input name="recommend" type="radio" value="no" class="inline"></label>
+    </fieldset>
+  
+    <fieldset>
+      <p> What would you like to see improved? (Check all that apply)</p>
+      <label> Front-end Projects<input value="Front-end-Projects" name="recommend" type="checkbox" class="inline"></label>
+  
+      <label> Back-end Projects<input value="Back-end-Projects" name="recommend" type="checkbox" class="inline"></label>
+  
+      <label> Data Visualization<input value="Data-Visualization" name="recommend" type="checkbox" class="inline"></label>
+      
+    </fieldset>
+    <fieldset>
+      <label>Additional comments <textarea type="textarea" id="textarea" ></textarea>
+  
+      </label>
+      </fieldset>
+  
+      <input type="submit" id="submit" value="Submit">
+      </form>
+  
+  </body>
+  
+  
+    </html>
