@@ -1,0 +1,101 @@
+<!--User stories
+1. Your product landing page should have a "header" element with a corresponding id="header"
+
+2. You can see an image within the "header" element with a corresponding id="header-img" (A logo would make a good image here)
+
+3.Within the #header element, you can see a "nav" element with a corresponding id="nav-bar"
+
+4.You can see at least three clickable elements inside the nav element, each with the class nav-link
+
+5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+
+6. You can watch an embedded product video with id="video"
+
+7. Your landing page has a form element with a corresponding id="form"
+
+8. Within the form, there is an input field with id="email" where you can enter an email address
+
+9. The #email input field should have placeholder text to let users know what the field is for
+
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address
+
+11. Within the form, there is a submit input with a corresponding id="submit"
+
+12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+
+13. The navbar should always be at the top of the viewport
+
+14. Your product landing page should have at least one media query
+
+15. Your product landing page should utilize CSS flexbox at least once
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--viewport tag makes so that the site woks on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Program</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <!--Logo-->
+        <img id="header-img" src="images/gym_icon.jpg" alt="gym icon" height="100" width="100"/>
+        
+        <!--Navigation-->
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#form-section">Form section</a></li>
+                <li><a class="nav-link" href="#video-section">Video section</a></li>
+                <li><a class="nav-link" href="#pricing-section">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="form-section">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <label for="email">Email <input name="email" id="email" type="email" placeholder="Enter your email" required></label>
+                <input type="submit" id="submit" value="Send">
+            </form>
+        </section>
+        
+
+            <!--You should be able to whats a embeded video here-->
+        <section id="video-section">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen id="video">
+            </iframe>
+
+        </section>
+
+        <section id="pricing-section">
+
+
+
+        </section>
+    </main>
+
+    <footer>
+         <i class="fa-regular fa-heart"></i>
+
+    </footer>
+    
+
+
+
+
+
+</body>
+
+
+
+</html>

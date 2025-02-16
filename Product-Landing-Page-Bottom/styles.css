@@ -1,0 +1,73 @@
+*{
+    /* Ensure proper sizing */
+    box-sizing: border-box;
+}
+
+
+header{
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    justify-content: space-between; /* Pushes items apart */
+    
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Prevent transparency */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.nav-links{
+    display: flex; /* Make links appear in a row */
+    list-style: none; /* Remove bullet points */
+    gap: 20px; /* Add space between links */
+    padding: 0;
+    margin: 0;
+}
+.nav-link{
+    text-decoration: none; /* Remove underline */
+    color: black; /* Link color */
+    font-weight: bold;
+}
+
+main{
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Pushes items apart */
+
+}
+
+footer{
+    border: solid green 1px;
+}
+
+#form-section{
+    text-align: center;
+    margin: 20px;
+    border: solid black 2px;
+}
+#video-section{
+    text-align: center;
+    margin: 30px;
+    border: solid black 2px;
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
