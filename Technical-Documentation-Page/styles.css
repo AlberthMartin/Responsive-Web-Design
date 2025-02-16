@@ -1,0 +1,92 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;;
+    color: black;
+    margin: 0;
+}
+
+
+header{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.container{
+    display: flex;
+}
+
+.content{
+    width: calc(100vw - 250px); /* Subtracts navbar width */
+    min-height: 100vh;
+    min-width: 250px;
+    display: block;
+    margin-left: 250px; /* Prevent content from sliding under navbar */
+    padding: 20px 20px 20px 40px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust width as needed */
+    height: 100vh;
+    background-color: #f4f4f4; /* Optional: Change background color */
+    overflow-y: auto; /* Allows scrolling if needed */
+    border-right: 1px solid #ccc; /* Optional: Adds a separator */
+    padding: 10px;
+}
+
+#main-doc {
+
+    padding: 20px;
+}
+
+.ul_navbar > li{
+    display: flex;
+    padding:10px;
+    margin: 0px 2px 0px -35px;
+    border: solid 2px gray;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-inline-start: 0;
+    border-radius: 5px;
+}
+
+.ul-navbar > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
+
+.divider{
+    height: 1px;
+    background-color: gray;
+}
+
+.code-block{
+    background-color: gainsboro;
+    font-family: "Courier New", monospace;
+}
+
+a{
+    color: #1b1b32;
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    #main-doc {
+        margin-left: 0;
+    }
+}
+

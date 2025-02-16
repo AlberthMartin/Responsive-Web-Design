@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How To Gain Muscle</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+      <body>
+        <div class="container">
+                <nav id="navbar">
+                    <header>Basics of CSS</header>
+                    <ul class="ul_navbar">
+                        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                        <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+                        <li><a class="nav-link" href="#Selector">Selector</a></li>
+                        <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+                        <li><a class="nav-link" href="#Text">Text</a></li>
+                        <li><a class="nav-link" href="#Links">Links</a></li>
+                        <li><a class="nav-link" href="#Lists">Lists</a></li>
+                        <li><a class="nav-link" href="#Table">Table</a></li>
+                        <li><a class="nav-link" href="#Display">Display</a></li>
+                    </ul>
+                </nav>
+
+            <main id="main-doc">
+                <div class="content">
+                    <section class="main-section" role="region" id="Introduction" aria-labelledby="Introduction"> 
+                        <header>Introduction</header>
+                        <p class="bold">All of this content is taken from <a href="https://www.w3schools.com/css/css_selectors.asp"> https://www.w3schools.com/css</a></p>
+                        <ul>
+                            <li>CSS stands for Cascading Style Sheets</li>
+                            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                            <li>External stylesheets are stored in CSS files</li>
+                        </ul>
+                        <div class="divider"></div>
+                        <h3>Why Use CSS?</h3>
+                        <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+                        <pre class="code-block"><code> <h2>Example:</h2>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</code></pre>
+                        <h2>CSS Solved a Big Problem</h2>
+                        <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+                        <p>HTML was created to describe the content of a web page, like:</p>
+                        <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+                        <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                        <p>When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+                        <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+                        <p>CSS removed the style formatting from the HTML page!</p>
+                        <div class="divider"></div>
+                        <h2>CSS Saves a Lot of Work!</h2>
+                        <p>The style definitions are normally saved in external .css files.</p>
+                        <p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+
+                    </section>
+
+                    <section class="main-section" role="region" id="Syntax" aria-labelledby="Syntax">
+                        <header>Syntax</header>
+                        <p>The selector points to the HTML element you want to style.</p>
+                        <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                        <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                        <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                        <h2>Example:</h2>
+                        <p>In this example all p elements will be center-aligned, with a red text color:</p>
+                        <pre class="code-block"><code>                     
+p {
+    color: red;
+    text-align: center;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="main-section" role="region" id="Selector" aria-labelledby="Selector">
+                        <header>Selector</header>
+                            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+                            <p>We can divide CSS selectors into five categories:</p>
+                            <ul>
+                                <li><span class="bold">Simple selectors</span> (select elements based on name, id, class)</li>
+                                <li><span class="bold">Combinator selectors</span> (select elements based on a specific relationship between them)</li>
+                                <li><span class="bold">Pseudo-class selectors</span> (select elements based on a certain state)</li>
+                                <li><span class="bold">Pseudo-elements</span> selectors (select and style a part of an element)</li>
+                                <li><span class="bold">Attribute selectors</span>(select elements based on an attribute or attribute value)</li>
+                            </ul>
+                            <p>This page will explain the most basic CSS selectors.</p>
+                            <div class="divider"></div>
+                            <h2>The CSS element Selector</h2>
+                            <p>The element selector selects HTML elements based on the element name.</p>
+                            <h2>Example:</h2>
+                            <p>Here, all p elements on the page will be center-aligned, with a red text color: </p>
+                            <pre class="code-block"><code>                     
+p {
+    color: red;
+    text-align: center;
+}
+                            </code></pre>
+                
+                            <h2>The CSS id Selector</h2>
+                            <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+                            <p>...</p>
+                            <pre class="code-block"><code>                     
+#para1 {
+    text-align: center;
+    color: red;
+}
+</code></pre>
+                    
+                            <h2>The CSS class Selector</h2>
+                            <p>The class selector selects HTML elements with a specific class attribute.</p>
+                            <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+                            <h2>Example</h2>
+                            <p>In this example all HTML elements with class="center" will be red and center-aligned: </p>
+                            <pre class="code-block"><code>                     
+                                .center {
+                                    text-align: center;
+                                    color: red;
+                                  }
+                            </code></pre>
+
+                            <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+                            <h2>Example</h2>
+                            <p>In this example only p elements with class="center" will be red and center-aligned: </p>
+                            <pre class="code-block"><code>                     
+                                p.center {
+                                    text-align: center;
+                                    color: red;
+                                  }
+                            </code></pre>
+                    
+                            <p>HTML elements can also refer to more than one class.</p>
+                            <h2>Example</h2>
+                            <p>In this example the p element will be styled according to class="center" and to class="large":</p>
+                            <pre class="code-block"><code>                     
+                                <p class="center large">This paragraph refers to two classes.</p>color: red;
+                            </code></pre>
+
+                        </section>
+
+                    <section class="main-section" role="region" id="Box_Model" aria-labelledby="Box-Model">
+                        <header>Box Model</header>
+                    </section>
+
+                    <section class="main-section" role="region" id="Text" aria-labelledby="Text">
+                        <header>Text</header>
+                    </section>
+
+                    <section class="main-section" role="region" id="Links" aria-labelledby="Links">
+                        <header>Links</header>
+                    </section>
+
+                    <section class="main-section" role="region" id="Lists" aria-labelledby="Lists">
+                        <header>Lists</header>
+                    </section>
+
+                    <section class="main-section" role="region" id="Table" aria-labelledby="Table">
+                        <header>Table</header>
+                    </section>
+
+                    <section class="main-section" role="region" id="Display" aria-labelledby="Display">
+                        <header>Display</header>
+                    </section>
+                </div>   
+            </main>
+        </div>
+
+
+
+
+      </body>
+
+
+
+</html>
